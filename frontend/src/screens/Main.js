@@ -11,7 +11,8 @@ export default function Main() {
   const [items, setItems] = useState([])
 
   const loadData = async () => {
-    let response = await fetch("http://localhost:5000/api/fooddata", {
+    let response = await fetch("https://gofoodie-nc0e.onrender.com/api/fooddata",//"http://localhost:5000/api/fooddata",
+     {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
